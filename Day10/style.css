@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #ffe000, #799f0c);
+    
+}
+
+.container{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    margin: 100px auto;
+}
+
+
+.form {
+    padding: 10px 20px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+}
+
+input {
+    outline: none;
+    border: none;
+    font-size: 24px;
+    color: #444;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.add {
+    padding: 5px 15px;
+    background: yellowgreen;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.todos {
+    list-style: none;
+}
+
+.todos li {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.todos li i {
+    color: #aaa;
+    visibility: hidden;
+}
+
+.todos li:hover i{
+    visibility: visible;
+}
+
+.todos li span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li.done span{
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+li.done span {
+
+}
